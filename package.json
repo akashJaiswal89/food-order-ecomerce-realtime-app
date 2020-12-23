@@ -1,0 +1,47 @@
+{
+    "name": "2nd-ecomerse",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "dependencies": {
+        "axios": "^0.21.0",
+        "bcrypt": "^5.0.0",
+        "connect-mongo": "^3.2.0",
+        "dependencies": "^0.0.1",
+        "dotenv": "^8.2.0",
+        "ejs": "^3.1.5",
+        "express": "^4.17.1",
+        "express-ejs-layouts": "^2.5.0",
+        "express-flash": "^0.0.2",
+        "express-session": "^1.17.1",
+        "moment": "^2.29.1",
+        "mongoose": "^5.11.8",
+        "noty": "^3.2.0-beta",
+        "passport": "^0.4.1",
+        "passport-local": "^1.0.0",
+        "socket.io": "^3.0.4"
+    },
+    "devDependencies": {
+        "cross-env": "^7.0.3",
+        "laravel-mix": "^6.0.0",
+        "nodemon": "^2.0.6",
+        "resolve-url-loader": "^3.1.2",
+        "sass": "^1.30.0",
+        "sass-loader": "^10.1.0",
+        "vue-template-compiler": "^2.6.12"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/akashJaiswal89/real.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/akashJaiswal89/real/issues"
+    },
+    "homepage": "https://github.com/akashJaiswal89/real#readme"
+}

@@ -1,0 +1,368 @@
+@import'./variables';
+@import'~noty/src/noty.scss';
+@import'~noty/src/themes/mint.scss';
+body {
+    font-family: 'lato', 'sans-serif';
+    -webkit-font-smoothing: antialiased;
+    color: $dark;
+}
+
+nav li:last-child a {
+    background-color: $primary;
+    &:hover {
+        background-color: $primary-hover;
+    }
+}
+
+nav li a {
+    transition: $smooth;
+    &:hover {
+        color: $primary;
+    }
+}
+
+section.hero {
+    background-color: $secondary;
+}
+
+.size {
+    background-color: $secondary;
+}
+
+.add-to-cart {
+    border: 2px solid $primary;
+    color: $primary;
+    transition: $smooth;
+    &:hover {
+        background-color: $primary;
+        border-color: $pure;
+        color: $pure;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
+.btn-primary {
+    background-color: $primary;
+    transition: $smooth;
+    &:hover {
+        background-color: $primary-hover;
+    }
+}
+
+section.cart {
+    background-color: $secondary;
+    .amount {
+        color: $primary;
+    }
+}
+
+section.login {
+    background-color: $secondary;
+    min-height: calc(100vh - 114px);
+    a {
+        color: $primary;
+        &:hover {
+            color: $primary-hover;
+        }
+    }
+}
+
+.noty_theme__mint {
+    border-radius: 50px!important;
+    padding-left: 8px!important;
+}
+
+a.link {
+    color: $primary;
+}
+
+section.status {
+    background-color: $secondary;
+    min-height: calc(100vh - 114px);
+}
+
+.status-box {
+    padding-top: 60px;
+}
+
+.status-box ul {
+    margin-left: 84px;
+}
+
+.status_line span {
+    position: relative;
+}
+
+.status_line span:after {
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    background-color: $dark;
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    transform: translateY(-5px);
+}
+
+.status_line span:before {
+    font-family: "Line Awesome Free";
+    font-size: 46px;
+    font-weight: 600;
+    position: absolute;
+    left: -90px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: inherit;
+}
+
+.status_line:nth-child(1) span:before {
+    content: '\f46c';
+}
+
+.status_line:nth-child(2) span:before {
+    content: '\f560';
+}
+
+.status_line:nth-child(3) span:before {
+    content: '\f818';
+}
+
+.status_line:nth-child(4) span:before {
+    content: '\f0d1';
+}
+
+.status_line:nth-child(5) span:before {
+    content: '\f582';
+}
+
+.status-box ul li {
+    position: relative;
+}
+
+// Line
+.status-box ul li:before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: -16px;
+    width: 2px;
+    height: 100%;
+    background: $dark;
+    margin-top: 10px;
+}
+
+// Last dot
+.status-box ul li:nth-child(5) span:after {
+    box-shadow: 0 30px 1px 20px $secondary;
+}
+
+.status-box ul li.step-completed:before {
+    background: $gray;
+}
+
+// dots
+.status-box ul li.step-completed span:after {
+    background: $gray;
+}
+
+// text
+.status-box ul li.step-completed span {
+    color: $gray;
+}
+
+.status-box ul li.current span {
+    color: $primary;
+}
+
+.status-box ul li.current span:after {
+    background: $primary;
+}
+
+.status_line small {
+    float: right;
+}
+
+@media only screen and (min-width: 532px) and (max-width: 1100px) {
+    .Dont {
+        font-size: 30px;
+    }
+    .order {
+        width: 100%;
+    }
+    .formCart {
+        text-align: center;
+    }
+    .status-box {
+        width: 90%;
+    }
+    .adminSection {
+        width: 100%;
+    }
+    .adminO {
+        width: 90px;
+        padding: 10px;
+        margin: 10px;
+    }
+    .font-3 {
+        font-size: 10px;
+        padding: 5px;
+    }
+    .width {
+        width: 20px;
+    }
+    .width-1 {
+        width: 53px;
+    }
+    .pAdmin {
+        display: inline;
+    }
+}
+
+@media only screen and (min-width: 446px) and (max-width: 532px) {
+    li a img {
+        width: 60px;
+    }
+    li a {
+        font-size: 15px;
+    }
+    .cart-add img {
+        width: 30px;
+    }
+    .order {
+        width: 100%;
+    }
+    .sizeCart {
+        padding-right: 10px;
+        margin-right: 10px;
+        font-size: 15px;
+    }
+    .pcs {
+        margin-right: 20px;
+        font-size: 20px;
+    }
+    .formCart {
+        text-align: center;
+    }
+    .font-1 {
+        font-size: 18px;
+    }
+    .font-2 {
+        font-size: 17px;
+    }
+    .status-box {
+        width: 90%;
+    }
+    .status-box {
+        width: 90%;
+    }
+    .adminSection {
+        width: 100%;
+    }
+    .adminO {
+        width: 90px;
+        padding: 10px;
+        margin: 10px;
+    }
+    .font-3 {
+        font-size: 10px;
+        padding: 5px;
+    }
+    .width {
+        width: 20px;
+    }
+    .width-1 {
+        width: 53px;
+    }
+    .pAdmin {
+        display: inline;
+    }
+}
+
+@media only screen and(min-width: 0px)and (max-width: 446px) {
+    li a {
+        font-size: 15px;
+    }
+    div a img {
+        width: 40px;
+    }
+    .cart-add img {
+        width: 20px;
+    }
+    .ml-6 {
+        margin-left: 10px;
+    }
+    nav li:last-child a {
+        padding: 10px 10px;
+    }
+    .Dont {
+        font-size: 20px;
+    }
+    .order-btn {
+        font-size: 12px;
+    }
+    h6 em {
+        font-size: 12px;
+    }
+    .order {
+        width: 100%;
+    }
+    .sizeCart {
+        padding-right: 10px;
+        margin-right: 10px;
+        font-size: 15px;
+    }
+    .pcs {
+        margin-right: 20px;
+        font-size: 20px;
+    }
+    .formCart {
+        text-align: center;
+    }
+    .font-1 {
+        font-size: 18px;
+        padding-right: 2px;
+        padding-left: 2px;
+    }
+    .font-2 {
+        font-size: 17px;
+        padding-right: 2px;
+        padding-left: 2px;
+    }
+    .status-box {
+        width: 90%;
+    }
+    .singleFont {
+        font-size: 13px;
+        margin-right: 10px;
+    }
+    .call {
+        font-size: 11px;
+    }
+    .status-box {
+        width: 90%;
+    }
+    .adminSection {
+        width: 100%;
+    }
+    .adminO {
+        width: 90px;
+        padding: 10px;
+        margin: 10px;
+    }
+    .font-3 {
+        font-size: 10px;
+        padding: 5px;
+    }
+    .width {
+        width: 20px;
+    }
+    .width-1 {
+        width: 53px;
+    }
+    .pAdmin {
+        display: inline;
+    }
+}
